@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/movies.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <div id="sideBar" class="row mx-0 bg-danger position-fixed">
+      <div
+        id="linkInSideBar"
+        class="col-10 linkInSideBar text-light px-3 py-4 pl-4 d-flex flex-column justify-content-between"
+      >
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled">
+              <a id="now_playing" href="#"
+                ><li class="fading item-1">Now playing</li></a
+              >
+              <a id="popular" href="#"
+                ><li class="fading item-2">Popular</li></a
+              >
+              <a id="top_rated" href="#"
+                ><li class="fading item-3">Top Rated</li></a
+              >
+              <a id="top_rated" href="#"
+                ><li class="fading item-4">Trending</li></a
+              >
+              <a id="upcoming" href="#"
+                ><li class="fading item-5">Upcoming</li></a
+              >
+              <a href="#contactUs"><li class="fading item-6">Contact Us</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="iconPlusCopyRight">
+          <div class="row my-md-3">
+            <div class="col-12">
+              <i class="fab fa-facebook-f m-1"></i>
+              <i class="fab fa-twitter m-1"></i>
+              <i class="fas fa-globe m-1"></i>
+            </div>
+          </div>
+          <p class="text-dark">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="iconsInSideBar bg-light d-flex flex-column justify-content-between col-2 p-3"
+      >
+        <img class="w-100" src="img/logo.png" alt="" />
+        <div id="openIcon">
+          <i class="fa fa-align-justify"></i>
+        </div>
+        <div class="smallerIcons">
+          <i class="my-md-2 fas fa-globe"></i>
+          <i class="my-md-2 fas fa-share-alt"></i>
+        </div>
+      </div>
+    </div>
+    <header id="search" class="container">
+      <div class="row mx-0 form-group p-md-5">
+        <div class="col-md-6">
+          <input
+            placeholder="get movies by word..."
+            class="form-control"
+            type="text"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            id="searchByCategory"
+            placeholder="search..."
+            class="form-control"
+            type="text"
+          />
+        </div>
+      </div>
+    </header>
+    <section id="moviesDiv" class="container">
+      <div id="moviesRow" class="row flex-wrap mx-0 p-md-2"></div>
+    </section>
+    <section id="contactUs" class="container">
+      <div class="row mx-0 py-md-4 text-light">
+        <h2>Contact Us...</h2>
+      </div>
+      <div class="row mx-0">
+        <div class="col-md-6">
+          <input
+            placeholder="Enter your name"
+            class="form-control form-group"
+            type="name"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            Enter a valid name starting with capital letter
+          </div>
+          <input
+            placeholder="Enter your phone"
+            class="form-control form-group"
+            type="text"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            Enter a valid Egyptian Phone number
+          </div>
+          <input
+            placeholder="Enter your password"
+            class="form-control form-group"
+            type="password"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            entre valid password *Minimum eight characters, at least one letter
+            and one number:*
+          </div>
+          <button class="btn rounded btn-outline-danger">Submit</button>
+        </div>
+        <div class="col-md-6">
+          <input
+            placeholder="Enter your email"
+            class="form-control form-group"
+            type="email"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            Enter a valid email
+          </div>
+          <input
+            placeholder="Enter your age"
+            class="form-control form-group"
+            type="text"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            Enter your age
+          </div>
+          <input
+            placeholder="Enter your Re-password"
+            class="form-control form-group"
+            type="password"
+          />
+          <div
+            id="alert"
+            class="alert alert-danger p-0 text-center font-weight-bold"
+          >
+            Enter a valid Repassword
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
